@@ -1,0 +1,39 @@
+#Lab 4
+# 1/24/2020
+#Dylan Lange
+    #Notes for Citing:
+        #Add comment of who you worked with
+        #Also include when they helped
+
+#Day 25-26 HW
+import sys
+
+NUMBER = 1000
+naturalnum = []
+start = 0
+five = 0
+three = 0
+threelist = []
+fivelist = []
+threemult = 0
+fivemult = 0
+while NUMBER >= start:
+    naturalnum.append(start)    
+
+    if NUMBER > start*3:
+        three = start*3
+        threemult = three + threemult
+        threelist.append(three)
+
+    if NUMBER > start*5:
+        five = start*5
+        fivemult = five + fivemult
+        fivelist.append(five)
+
+
+
+    start = start + 1
+    
+total = threemult + fivemult
+
+print(total)
