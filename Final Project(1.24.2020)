@@ -90,9 +90,44 @@ def Problem2():
 
 def Problem3():
     #Problem 3 (ProjectEuler)
-
-
+    #Largest Prime Factor
     print('Problem 3 of Projecteuler!')
+
+    primenum = 13195
+    primelist = []
+    factorlist = []
+    test = 10
+#CREATES A LIST OF PRIME NUMBERS
+
+
+        
+
+    for num in range(0,test + 1):
+        if num > 1:
+        #EXCLUDES 1 FROM THE LIST(NOT A PRIME NUMBER)
+            for i in range(2, num):
+             #READS ALL THE NUMBERS IN THE RANGE OF 2 AND THE DESIRED NUMBER
+                if (num % i) == 0:
+                    break
+        
+            else:    
+                primelist.append(num)
+    
+    lastnum = primelist[len(primelist)-1]
+
+
+
+    #print(primelist)
+
+
+#CREATE FACTORED PRIME LIST
+
+    print(factorlist)
+
+
+
+
+
 
 def Problem4():
     #Problem 4 (ProjectEuler)
@@ -137,4 +172,4 @@ def Problem10():
 # PROGRAM RUNNING
 # PROGRAM THE RUNNING
 
-print(Problem2())
+print(Problem3())
