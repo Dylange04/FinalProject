@@ -136,7 +136,9 @@ def Problem4():
     #Creates values that are within the range of being three digit numbers
     for x in range(100,999):
         for temp in range(100,999):
-
+            number = str(temp*x).split()[0]
+            if len(number) == 6:
+                
 
 
 
@@ -178,5 +180,3 @@ def Problem10():
 # PROGRAM THE RUNNING
 
 print(Problem4())
-
-
