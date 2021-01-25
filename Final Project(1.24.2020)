@@ -138,6 +138,8 @@ def Problem4():
         for temp in range(100,999):
             number = str(temp*x).split()[0]
             if len(number) == 6:
+                if num[0] == num[-1] and num[1] == num[-2] and num[2] == num[-3]:
+                     palindromeslist.append(temp * x)
                 
 
 
@@ -180,3 +182,5 @@ def Problem10():
 # PROGRAM THE RUNNING
 
 print(Problem4())
+
+
